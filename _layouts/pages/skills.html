@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% capture eugen %}{% include_relative _posts/skills/eugen.markdown %}{% endcapture %}
+{{ eugen | markdownify }}
+{% capture timo %}{% include_relative _posts/skills/timo.markdown %}{% endcapture %}
+{{ timo| markdownify }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">{{ eugen | markdownify }}</div>
+    <div class="col-md-6">{{ timo | markdownify }}</div>
+  </div>
+</div>
+
